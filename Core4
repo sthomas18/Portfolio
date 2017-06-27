@@ -13,8 +13,8 @@
 	</head>
 	
   <body>
-		<div class = "container" style= border: "1px"; float= "center";> 
-  	<h1> Core4 </h1>
+		<div class="container" style = float:"right"; border: "1px"; text-align: "center";>
+  	<h1> Core4 </h1> </div>
 		<h2> Variables </h2>
 		<h2> Conditionals </h2>
 		<h2> Loops </h2>
