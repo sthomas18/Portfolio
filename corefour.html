@@ -55,7 +55,7 @@
 	  <button class="tablinks" onclick="openCity(event, 'Variables')" id="defaultOpen">Variables</button>
 	  <button class="tablinks" onclick="openCity(event, 'Conditionals')">Conditionals</button>
 	  <button class="tablinks" onclick="openCity(event, 'Loops')">Loops</button>
-	  <button class= "tablinks" onclick="openCity(event, 'Function')">Function</button>
+	  <button class= "tablinks" onclick="openCity(event, 'Functions')">Functions</button>
 	</div>
 	
 	div id="Variables" class="tabcontent">
@@ -66,8 +66,36 @@
 	div id="Conditionals" class="tabcontent">
 		<span onclick="this.parentElement.style.display='none'" class="topright">x</span>
 		<h3> Conditionals </h3>
-		<p>Conditionals use booleans (true/false) to allow you to call a function 
-	
+		<p>Conditionals use booleans (true/false) to allow you to call a function, but only if something is true</p>
+	</div>
+	div id="Loops" class="tabcontent">
+		<span onclick="this.parentElement.style.display='none'" class="topright">x</span>
+		<h3>Loops</h3>
+		<p>Loops are used so that you can repeat an action several times with a given condition. Conditionals can be used to create a loop.</p>
+	</div>
+	div id="Functions" class="tabcontent">
+		<span onclick="this.parentElement.style.display='none'" class="topright">x</span>
+		<h3>Functions</h3>
+		<p> Functions can be used to keep code concise and organized by organizing a block of code into one method/action that can be called later in your code.</p>
+	</div>
+<script>
+	function openCity(evt, cityName) {
+	    var i, tabcontent, tablinks;
+	    tabcontent = document.getElementsByClassName("tabcontent");
+	    for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	    }
+	    tablinks = document.getElementsByClassName("tablinks");
+	    for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	    }
+	    document.getElementById(cityName).style.display = "block";
+	    evt.currentTarget.className += " active";
+	}
+
+	// Get the element with id="defaultOpen" and click on it
+	document.getElementById("defaultOpen").click();
+</script>
 	
 	<div class="container" style = float:"right"; border: "1px"; text-align: "center";>
   	<h1> Core4 </h1> </div>
