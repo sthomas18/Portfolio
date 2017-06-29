@@ -7,18 +7,76 @@
 		h1{
 			font-family: 'Bungee Shade';font-size: 50px;}
 		h2{
-			font-family: 'Amatica SC';font-size: 22px;
+			font-family: 'Amatica SC';font-size: 22px;}
+			
 		
-	</style>
-	</head>
+		/* Style the tab */
+		div.tab {
+			overflow: hidden;
+			border: 1px solid #ccc;
+			background-color: #f1f1f1;}
+
+		/* Style the buttons inside the tab */
+		div.tab button {
+		    background-color: inherit;
+		    float: left;
+		    border: none;
+		    outline: none;
+		    cursor: pointer;
+		    padding: 14px 16px;
+		    transition: 0.3s;
+			font-size: 17px;}
+		div.tab button:hover {
+    			background-color: #ddd;}
+		/* Create an active/current tablink class */
+		div.tab button.active {
+  		  background-color: #ccc;}
+		/* Style the tab content */
+		.tabcontent {
+		    display: none;
+		    padding: 6px 12px;
+		    border: 1px solid #ccc;
+			border-top: none;}
+		/* Style the tab content */
+		.tabcontent {
+		    display: none;
+		    padding: 6px 12px;
+		    border: 1px solid #ccc;
+			border-top: none;}
+		.topright:hover {
+			color: red;}
+
+
+</style>
+</head>
 	
-  <body>
-		<div class="container" style = float:"right"; border: "1px"; text-align: "center";>
+<body>
+	<div class="tab">
+	  <button class="tablinks" onclick="openCity(event, 'Variables')" id="defaultOpen">Variables</button>
+	  <button class="tablinks" onclick="openCity(event, 'Conditionals')">Conditionals</button>
+	  <button class="tablinks" onclick="openCity(event, 'Loops')">Loops</button>
+	  <button class= "tablinks" onclick="openCity(event, 'Function')">Function</button>
+	</div>
+	
+	div id="Variables" class="tabcontent">
+		<span onclick="this.parentElement.style.display='none'" class="topright">x</span>
+		<h3>Variables</h3>
+		<p>Variables are used to store different data types, like strings, lists, or integers, so that you can reference them later in your code.</p>
+	</div>
+	div id="Conditionals" class="tabcontent">
+		<span onclick="this.parentElement.style.display='none'" class="topright">x</span>
+		<h3> Conditionals </h3>
+		<p>Conditionals use booleans (true/false) to allow you to call a function 
+	
+	
+	<div class="container" style = float:"right"; border: "1px"; text-align: "center";>
   	<h1> Core4 </h1> </div>
 		<h2> Variables </h2>
 		<h2> Conditionals </h2>
 		<h2> Loops </h2>
 		<h2> Function </h2>
+	
+		
   
   
   </body>
